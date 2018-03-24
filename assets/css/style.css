@@ -44,7 +44,7 @@ p {
 }
 .btn,
 a.btn {
-  background: #C5AA53;
+  background: #44A1A0;
   padding: 8px 15px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -91,7 +91,7 @@ a.btn:hover {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
 }
 #topcontrol:hover {
-  background: #0275a8;
+  background: #8d4439;
   color: #fff;
 }
 #topcontrol .fa {
@@ -134,8 +134,8 @@ a.btn:hover {
   border: 2px solid #2F2929;
 }
 .header .social a:hover {
-  color: #fff;
-  border-color: #fff;
+  color: #44A1A0;
+  border-color: #44A1A0;
 }
 .header .actions {
   position: absolute;
@@ -170,9 +170,9 @@ a.btn:hover {
   letter-spacing: 0.5px;
 }
 .header .title {
-  color: #2F2929;
-  font-size: 28px;
-  font-weight: 300;
+  color: #8d4439;
+  font-size: 24px;
+  font-weight: 400;
   margin-bottom: 30px;
 }
 .header .intro {
@@ -235,7 +235,7 @@ a.btn:hover {
   z-index: 100;
   background: #44A1A0;
 }
-.page-nav-wrapper a {
+.page-nav-wrapper.fixed a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-weight: 500;
@@ -259,11 +259,11 @@ a.btn:hover {
   background: none;
 }
 .page-nav-wrapper .page-nav li a {
-  color: rgba(255, 255, 255, 0.6);
+  color: #8d4439;
   padding: inherit;
 }
 .page-nav-wrapper .page-nav li a:hover {
-  color: #8d4439;
+  color: rgba(255, 255, 255, 0.6);
 }
 .page-nav-wrapper .page-nav li a:hover,
 .page-nav-wrapper .page-nav li a:active,
@@ -499,6 +499,9 @@ a.btn:hover {
   color: #03A9F4;
   border-bottom: 2px solid #03A9F4;
 }
+#project-cards{
+  height: 250px;
+}
 .portfolio-section .item {
   margin-bottom: 30px;
 }
@@ -535,8 +538,12 @@ a.btn:hover {
 .portfolio-section .item-inner .content a {
   color: #2F2929;
 }
+.portfolio-section .item-inner .content a:hover {
+  /* color: #03A9F4; */
+  color: #8d4439;
+}
 .portfolio-section .item-inner .content .sub-title {
-  color: #2F2929;  
+  color: #8d4439;
   font-size: 24px;
   margin-top: 0;
   margin-bottom: 5px;
@@ -574,6 +581,27 @@ a.btn:hover {
 .profile-image {
     border-radius: 50%;
 }
+.contact-email {
+  font-size: 20px;
+  text-align: left;
+  color: #8d4439;
+  padding-top: 20px;
+}
+.contact-form-below {
+  font-size: 20px;
+  text-align: left;
+  color: #8d4439;
+  padding-bottom: 20px;
+}
+
+.mailtolink {
+  color: #44A1A0;
+}
+
+.mailtolink:hover {
+  color: #F0CF65;
+}
+
 .contact-section .intro p {
   margin-bottom: 15px;
 }
