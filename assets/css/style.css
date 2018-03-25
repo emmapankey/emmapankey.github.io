@@ -306,7 +306,7 @@ a.btn:hover {
   margin-bottom: 0;
 }
 .section-title {
-  margin-top: 0;
+  margin-top: 50px;
   margin-bottom: 45px;
   font-size: 24px;
   text-align: center;
@@ -539,6 +539,11 @@ a.btn:hover {
   -moz-opacity: 0.9;
   opacity: 0.9;
 }
+.portfolio-section img {
+  margin-left: 60px;
+  margin-bottom: 20px;
+  width: 60px;
+}
 .portfolio-section .item-inner .content {
   padding: 30px;
   padding-bottom: 75px;
@@ -548,7 +553,6 @@ a.btn:hover {
   color: #2F2929;
 }
 .portfolio-section .item-inner .content a:hover {
-  /* color: #03A9F4; */
   color: #8d4439;
 }
 .portfolio-section .item-inner .content .sub-title {
@@ -556,21 +560,23 @@ a.btn:hover {
   font-size: 24px;
   margin-top: 0;
   margin-bottom: 5px;
+  text-align: center;
 }
 .portfolio-section .item-inner .content .meta {
   color: #2F2929;
   font-size: 14px;
+  text-align: center;  
 }
 .portfolio-section .item-inner .content .github-action {
   position: absolute;
   margin-top: 20px;
-  left: 30px;
+  padding-left: 45px;
   font-weight: bold;
 }
 .portfolio-section .item-inner .content .heroku-action {
   position: absolute;
   bottom: 10px;
-  left: 30px;
+  padding-left: 25px;  
   font-weight: bold;
 }
 .contact-section .intro {
@@ -712,20 +718,6 @@ a.btn:hover {
   }
   .portfolio-section .item-inner .content {
     padding: 15px;
-  }
-  .portfolio-section .item-inner .content .sub-title {
-    font-size: 14px;
-    max-width: 120px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  .portfolio-section .item-inner .content .meta {
-    margin-bottom: 30px;
-    max-width: 120px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
   .portfolio-section .item-inner .content .action {
     position: static;
