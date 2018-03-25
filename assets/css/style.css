@@ -172,15 +172,17 @@ a.btn:hover {
 }
 .header .name {
   color: #2F2929;
-  font-size: 48px;
+  font-size: 60px;
   margin-bottom: 15px;
   letter-spacing: 0.5px;
+  font-family: 'Aladin', cursive;  
 }
 .header .title {
   color: #8d4439;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;  
 }
 .header .intro {
   background: #F0CF65;
@@ -649,6 +651,9 @@ a.btn:hover {
 .footer .container a {
   color: #2F2929;
 }
+.copyright {
+  font-weight: bold;
+}
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .header .social {
@@ -669,12 +674,6 @@ a.btn:hover {
   }
   .header .actions .btn:last-child {
     margin-bottom: 0;
-  }
-  .header .name {
-    font-size: 36px;
-  }
-  .header .title {
-    font-size: 22px;
   }
   .header .contact-info li {
     margin-right: 0;

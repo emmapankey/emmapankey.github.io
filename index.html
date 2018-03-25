@@ -13,6 +13,7 @@
     <!-- Google Fonts  -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
         rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Aladin|Open+Sans:600" rel="stylesheet">
     <!-- Global CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -30,7 +31,7 @@
     <header class="header">
         <div class="top-bar container-fluid">
             <div class="actions">
-                <a class="btn hidden-xs scrollto" href="#contact-section"><i class="far fa-paper-plane" aria-hidden="true"></i> Contact Me</a>
+                <a class="btn hidden-xs" id="scrollTo" href="#contact-section"><i class="far fa-paper-plane" aria-hidden="true"></i> Contact Me</a>
                 <a class="btn" href="https://drive.google.com/open?id=1WNQXIQsVHm1OIHc3Zj_ez0GSBmHgj-Bn" target="_blank"><i class="fas fa-download" aria-hidden="true"></i> Download My Resume</a>
             </div>
             <!--//actions-->
@@ -77,11 +78,11 @@
             <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
                 <div class="container">
                     <ul id="page-nav" class="nav page-nav list-inline">
-                        <li><a class="scrollto" href="#experiences-section">Experiences</a></li>
-                        <li><a class="scrollto" href="#education-section">Education</a></li>
-                        <li><a class="scrollto" href="#skills-section">Skills</a></li>
-                        <li><a class="scrollto" href="#portfolio-section">Portfolio</a></li>
-                        <li><a class="scrollto" href="#contact-section">Contact</a></li>
+                        <li><a id="scrollto" href="#experiences-section">Experiences</a></li>
+                        <li><a id="scrollto" href="#education-section">Education</a></li>
+                        <li><a id="scrollto" href="#skills-section">Skills</a></li>
+                        <li><a id="scrollto" href="#portfolio-section">Portfolio</a></li>
+                        <li><a id="scrollto" href="#contact-section">Contact</a></li>
                     </ul>
                     <!--//page-nav-->
                 </div>
@@ -184,7 +185,7 @@
                     </div>
                     <!--//item-inner-->
                 </div>
-         
+
                 <!--//item-->
                 <div class="item col-xs-12 col-sm-6">
                     <div class="item-inner">
@@ -264,19 +265,19 @@
                     <span class="skill-tag">React</span>
                     <span class="skill-tag">Bootstrap</span>
                     <span class="skill-tag">Materialize</span>
-                    <span class="skill-tag">Media Queries</span>                    
+                    <span class="skill-tag">Media Queries</span>
                     <span class="skill-tag">Handlebars</span>
-                    <span class="skill-tag">Node.js</span>                  
+                    <span class="skill-tag">Node.js</span>
                     <span class="skill-tag">mySQL</span>
                     <span class="skill-tag">Sequelize</span>
                     <span class="skill-tag">MongoDB</span>
                     <span class="skill-tag">Mongoose</span>
                     <span class="skill-tag">Moment.js</span>
                     <span class="skill-tag">Firebase</span>
-                    <span class="skill-tag">Express</span>                    
+                    <span class="skill-tag">Express</span>
                     <span class="skill-tag">AJAX</span>
                     <span class="skill-tag">APIs</span>
-                    <span class="skill-tag">Heroku</span>                    
+                    <span class="skill-tag">Heroku</span>
                     <span class="skill-tag">Git</span>
                     <span class="skill-tag">GitHub</span>
                     <span class="skill-tag">Slack</span>
@@ -290,7 +291,7 @@
 
         <section id="portfolio-section" class="portfolio-section section">
             <h2 class="section-title">Portfolio</h2>
-            <div class="items-wrapper isotope row">
+            <div class="items-wrapper row">
                 <div class="item col-md-3 col-xs-6" id="project-cards">
                     <div class="item-inner">
                         <figure class="figure">
@@ -301,7 +302,6 @@
                             <div class="meta">React/Node/Express/Mongo</div>
                             <div class="github-action"><a href="https://github.com/peraltot/Project-3-Speech" target="_blank">View on Github</a></div>
                             <div class="heroku-action"><a href="https://pure-caverns-32781.herokuapp.com/" target="_blank">Visit the Heroku site</a></div>
-                            
                         </div>
                         <!--//content-->
                     </div>
@@ -331,7 +331,7 @@
                         </figure>
                         <div class="content text-left">
                             <h3 class="sub-title">Friend Finder</h3>
-                            <div class="meta">Node.js/Express</div>                            
+                            <div class="meta">Node.js/Express</div>
                             <div class="github-action"><a href="https://github.com/emmapankey/FriendFinder" target="_blank">View on Github</a></div>
                             <div class="heroku-action"><a href="https://limitless-caverns-57538.herokuapp.com/" target="_blank">Visit the Heroku site</a></div>
                         </div>
@@ -341,22 +341,22 @@
                 </div>
                 <!--//item-->
                 <div class="item col-md-3 col-xs-6">
-                        <div class="item-inner">
-                            <figure class="figure">
-                                <img class="img-responsive" src="assets/images/portfolio/knowbeforeugo.png" alt="knowbeforeugo-img" />
-                            </figure>
-                            <div class="content text-left">
-                                <h3 class="sub-title">KnowBeforeUGO</h3>
-                                <div class="meta">JavaScript &amp; APIs</div>
-                                <div class="github-action"><a href="https://github.com/emmapankey/KnowBeforeUGO" target="_blank">View on Github</a></div>
-                                <div class="heroku-action"><a href="https://knowbeforeugo.herokuapp.com/" target="_blank">Visit the Heroku site</a></div>                                
-                                                              
-                            </div>
-                            <!--//content-->
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-responsive" src="assets/images/portfolio/knowbeforeugo.png" alt="knowbeforeugo-img" />
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title">KnowBeforeUGO</h3>
+                            <div class="meta">JavaScript &amp; APIs</div>
+                            <div class="github-action"><a href="https://github.com/emmapankey/KnowBeforeUGO" target="_blank">View on Github</a></div>
+                            <div class="heroku-action"><a href="https://knowbeforeugo.herokuapp.com/" target="_blank">Visit the Heroku site</a></div>
+
                         </div>
-                        <!--//item-inner-->
+                        <!--//content-->
                     </div>
-                    <!--//item-->
+                    <!--//item-inner-->
+                </div>
+                <!--//item-->
                 <div class="item col-md-3 col-xs-6">
                     <div class="item-inner">
                         <figure class="figure">
@@ -366,7 +366,7 @@
                             <h3 class="sub-title">Train-Scheduler</h3>
                             <div class="meta">JavaScript/Firebase/HTML/CSS</div>
                             <div class="github-action"><a href="https://github.com/emmapankey/Train-Scheduler" target="_blank">View on Github</a></div>
-                            <div class="heroku-action"><a href="https://train-scheduler-13484.herokuapp.com/" target="_blank">Visit the Heroku site</a></div>                                                            
+                            <div class="heroku-action"><a href="https://train-scheduler-13484.herokuapp.com/" target="_blank">Visit the Heroku site</a></div>
                         </div>
                         <!--//content-->
                     </div>
@@ -382,7 +382,7 @@
                             <h3 class="sub-title">RGB Guessing</h3>
                             <div class="meta">JavaScript/HTML/CSS</div>
                             <div class="github-action"><a href="https://github.com/emmapankey/RGB-Color-Guessing" target="_blank">View on Github</a></div>
-                            <div class="heroku-action"><a href="https://rgbcolors.herokuapp.com/" target="_blank">Visit the Heroku site</a></div>                                                                                        
+                            <div class="heroku-action"><a href="https://rgbcolors.herokuapp.com/" target="_blank">Visit the Heroku site</a></div>
                         </div>
                         <!--//content-->
                     </div>
@@ -399,12 +399,12 @@
         <section id="contact-section" class="contact-section section">
 
             <h2 class="section-title">Get in Touch</h2>
-                
+
             <div class="intro">
                 <img class="profile-image" src="assets/images/profile.jpg" alt="Emma Pic">
                 <div class="dialog">
-                    <p>Currently seeking Web Developer opportunities. I want to use my skills to create impactful web
-                        applications to solve real world problems and gain valuable work experience.</p>
+                    <p>Currently seeking Web Developer opportunities. I want to use my skills to create impactful web applications
+                        to solve real world problems and gain valuable work experience.</p>
                     <p><strong>My skillset includes:</strong></p>
                     <ul class="list-unstyled service-list">
                         <li><i class="fas fa-check" aria-hidden="true"></i> Front-end development</li>
@@ -438,13 +438,15 @@
 
     <footer class="footer text-center">
         <div class="container">
-            <small class="copyright">Copyright &copy; <a href="" target="_blank">Emma Pankey</a></small>
+            <small class="copyright">&copy; <a href="" target="_blank">Emma Pankey</a></small>
         </div>
         <!--//container-->
     </footer>
 
     <!-- Javascript -->
     <!-- <===========================================================================================> -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script> -->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Bootstrap -->
@@ -453,12 +455,8 @@
 
     <!-- Plugins -->
     <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
-    <!-- <script type="text/javascript" src="assets/plugins/jquery-scrollTo-2.1.2/jquery.scrollTo.min.js"></script>  -->
-    <!-- <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script> -->
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script> -->
     <script type="text/javascript" src="assets/plugins/easy-pie-chart/jquery.easypiechart.min.js"></script>
     <script type="text/javascript" src="assets/plugins/imagesloaded.pkgd.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
     <!-- Local JS -->
     <script type="text/javascript" src="assets/js/main.js"></script>
